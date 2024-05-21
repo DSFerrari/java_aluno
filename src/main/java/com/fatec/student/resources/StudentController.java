@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 
 
+
 @RestController
 @RequestMapping("students")
 public class StudentController {
@@ -39,5 +40,4 @@ public class StudentController {
     public Student Save(@RequestBody Student student) {
         return this.studentService.save(student);
     }
-    
     }
